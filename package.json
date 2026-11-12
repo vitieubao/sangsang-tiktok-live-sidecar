@@ -1,0 +1,19 @@
+{
+  "name": "sangsang-tiktok-live-sidecar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SangSang Play TikTok LIVE sidecar: a separate program that wraps TikTok-Live-Connector and emits minimised, hashed comment tokens over stdio NDJSON. Not part of server/.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "main": "src/main.mjs",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/main.mjs --mode=real",
+    "start:fake": "node src/main.mjs --mode=fake"
+  },
+  "dependencies": {
+    "tiktok-live-connector": "2.5.0"
+  }
+}
